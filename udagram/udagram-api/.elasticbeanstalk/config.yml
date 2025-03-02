@@ -1,0 +1,21 @@
+branch-defaults:
+  default:
+    environment: udagram-app
+environment-defaults:
+  udagram-api-app-env:
+    branch: null
+    repository: null
+global:
+  application_name: udagram-app
+  branch: null
+  default_ec2_keyname: aws-eb
+  default_platform: Node.js 18 running on 64bit Amazon Linux 2
+  default_region: us-east-2
+  include_git_submodules: true
+  instance_profile: null
+  platform_name: null
+  platform_version: null
+  profile: null
+  repository: null
+  sc: null
+  workspace_type: Application
