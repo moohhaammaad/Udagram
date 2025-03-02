@@ -2,6 +2,6 @@ node_modulesset_env.sh
 udagram/set_env.sh
 
 # Elastic Beanstalk Files
-# .elasticbeanstalk/*
-# !.elasticbeanstalk/*.cfg.yml
-# !.elasticbeanstalk/*.global.yml
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
