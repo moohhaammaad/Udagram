@@ -5,7 +5,7 @@ environment-defaults:
   udagram-app:
     branch: null
     repository: null
-  udagram-app-env2:
+  udagram-app-env:
     branch: null
     repository: null
 global:
