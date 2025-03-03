@@ -7,7 +7,7 @@ export POSTGRES_DB="postgres"
 export AWS_BUCKET="arn:aws:s3:::udagram-proj-bucket"
 export AWS_REGION="us-east-2"
 export DATABASE_URL="postgres://postgres:staySafeUdagram@dudagram-database.c8kruisna0ti.us-east-2.rds.amazonaws.com:5432/postgres"
-# export AWS_PROFILE=default
+export AWS_PROFILE="default"
 # export JWT_SECRET=mysecretstring
 # export URL=http://localhost:8100
 echo "Postgres Password: '$POSTGRES_PASSWORD'"
