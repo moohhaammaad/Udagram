@@ -9,4 +9,4 @@ This folder contains documentation for the project, including:
 Refer to each section for more details.
 
 
-**Hosted Frontend Application at:** https://udagram-proj-bucket.s3.us-east-2.amazonaws.com/home
+**Hosted Frontend Application at:** https://udagram-proj-bucket.s3.us-east-2.amazonaws.com/index.html
