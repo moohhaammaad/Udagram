@@ -58,6 +58,9 @@ jobs:
       - run:
           name: Select EB Environment
           command: |
+            if [ ! -d ".elasticbeanstalk" ]; then
+              eb init udagram-app --platform node.js --region us-east-2
+            fi
             eb use $EB_ENV_NAME
       - run:
           name: Set Environment Variables in Elastic Beanstalk
