@@ -44,14 +44,6 @@ jobs:
           name: API Build
           command: |
             npm run api:build
-      - run:
-          name: Deploy Back-End
-          command: | 
-            npm run api:deploy
-      - run:
-          name: Deploy Front-End
-          command: |
-            npm run frontend:deploy
   # deploy step will run only after manual approval
   deploy:
     docker:
@@ -92,6 +84,15 @@ jobs:
           # TODO: Install, build, deploy in both apps
           command: |
             npm run deploy
+
+      - run:
+          name: Deploy Back-End
+          command: | 
+            npm run api:deploy
+      - run:
+          name: Deploy Front-End
+          command: |
+            npm run frontend:deploy
             
 workflows:
   udagram:
