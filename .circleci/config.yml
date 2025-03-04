@@ -88,7 +88,6 @@ jobs:
             npm run frontend:build
             npm run api:build
             npm run deploy
-            eb deploy $EB_ENV_NAME
             
 workflows:
   udagram:
