@@ -56,6 +56,23 @@ jobs:
       - aws-cli/setup
       - checkout
       - run:
+          name: Set Environment Variables in Elastic Beanstalk
+          command: |
+            eb setenv \
+              AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID \
+              AWS_BUCKET=$AWS_BUCKET \
+              AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION \
+              AWS_PROFILE=$AWS_PROFILE \
+              AWS_REGION=$AWS_REGION \
+              AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY \
+              DATABASE_URL = $DATABASE_URL \
+              DB_PORT=$DB_PORT \
+              PORT=$PORT \
+              POSTGRES_DB=$POSTGRES_DB \
+              POSTGRES_HOST=$POSTGRES_HOST \
+              POSTGRES_PASSWORD=$POSTGRES_PASSWORD \
+              POSTGRES_USER=$POSTGRES_USER \
+      - run:
           name: Deploy App
           # TODO: Install, build, deploy in both apps
           command: |
