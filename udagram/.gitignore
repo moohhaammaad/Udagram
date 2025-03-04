@@ -1,4 +1,5 @@
-node_modulesset_env.sh
+node_modules 
+set_env.sh
 udagram/set_env.sh
 
 # Elastic Beanstalk Files
