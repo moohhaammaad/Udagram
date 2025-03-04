@@ -56,6 +56,10 @@ jobs:
       - aws-cli/setup
       - checkout
       - run:
+        name: Select EB Environment
+        command: |
+          eb use $EB_ENV_NAME
+      - run:
           name: Set Environment Variables in Elastic Beanstalk
           command: |
             eb setenv \
